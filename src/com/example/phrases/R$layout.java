@@ -2,10 +2,10 @@
 // Jad home page: http://www.geocities.com/kpdus/jad.html
 // Decompiler options: braces fieldsfirst space lnc 
 
-package android.support.v7.appcompat;
+package com.example.phrases;
 
 
-// Referenced classes of package android.support.v7.appcompat:
+// Referenced classes of package com.example.phrases:
 //            R
 
 public static final class 
@@ -35,6 +35,8 @@ public static final class
     public static final int abc_search_dropdown_item_icons_2line = 0x7f030015;
     public static final int abc_search_view = 0x7f030016;
     public static final int abc_simple_decor = 0x7f030017;
+    public static final int activity_main = 0x7f030018;
+    public static final int activity_phrase = 0x7f030019;
     public static final int support_simple_spinner_dropdown_item = 0x7f03001a;
 
     public ()

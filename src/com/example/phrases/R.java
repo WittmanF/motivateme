@@ -2,7 +2,7 @@
 // Jad home page: http://www.geocities.com/kpdus/jad.html
 // Decompiler options: braces fieldsfirst space lnc 
 
-package android.support.v7.appcompat;
+package com.example.phrases;
 
 
 public final class R
@@ -18,6 +18,16 @@ public final class R
         public static final int abc_slide_out_top = 0x7f040005;
 
         public anim()
+        {
+        }
+    }
+
+    public static final class array
+    {
+
+        public static final int phrases = 0x7f0c0000;
+
+        public array()
         {
         }
     }
@@ -289,6 +299,7 @@ public final class R
         public static final int abc_textfield_searchview_holo_light = 0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark = 0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light = 0x7f020056;
+        public static final int ic_launcher = 0x7f020057;
 
         public drawable()
         {
@@ -333,6 +344,8 @@ public final class R
         public static final int never = 0x7f050009;
         public static final int none = 0x7f050010;
         public static final int normal = 0x7f050000;
+        public static final int notify_button = 0x7f05003c;
+        public static final int phrase_text = 0x7f05003d;
         public static final int progress_circular = 0x7f050018;
         public static final int progress_horizontal = 0x7f050019;
         public static final int radio = 0x7f05002f;
@@ -353,6 +366,7 @@ public final class R
         public static final int split_action_bar = 0x7f05001e;
         public static final int submit_area = 0x7f050039;
         public static final int tabMode = 0x7f050002;
+        public static final int timer_text = 0x7f05003e;
         public static final int title = 0x7f05002b;
         public static final int top_action_bar = 0x7f050020;
         public static final int up = 0x7f050021;
@@ -401,6 +415,8 @@ public final class R
         public static final int abc_search_dropdown_item_icons_2line = 0x7f030015;
         public static final int abc_search_view = 0x7f030016;
         public static final int abc_simple_decor = 0x7f030017;
+        public static final int activity_main = 0x7f030018;
+        public static final int activity_phrase = 0x7f030019;
         public static final int support_simple_spinner_dropdown_item = 0x7f03001a;
 
         public layout()
@@ -424,6 +440,10 @@ public final class R
         public static final int abc_searchview_description_voice = 0x7f0a0008;
         public static final int abc_shareactionprovider_share_with = 0x7f0a000c;
         public static final int abc_shareactionprovider_share_with_application = 0x7f0a000b;
+        public static final int app_name = 0x7f0a000d;
+        public static final int hello_world = 0x7f0a000e;
+        public static final int phrase = 0x7f0a000f;
+        public static final int title_activity_phrase = 0x7f0a0010;
 
         public string()
         {
@@ -433,6 +453,8 @@ public final class R
     public static final class style
     {
 
+        public static final int AppBaseTheme = 0x7f0b008b;
+        public static final int AppTheme = 0x7f0b008c;
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog = 0x7f0b0063;
         public static final int TextAppearance_AppCompat_Base_SearchResult = 0x7f0b006d;
         public static final int TextAppearance_AppCompat_Base_SearchResult_Subtitle = 0x7f0b006f;
