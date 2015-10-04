@@ -26,7 +26,7 @@ public class AlarmReceiver extends BroadcastReceiver
     public void createNotification(Context context)
     {
         Object obj = PendingIntent.getActivity(context, 0, new Intent(context, com/momintechnologies/phrases/PhraseActivity), 0);
-        obj = (new android.app.Notification.Builder(context)).setContentTitle("Phrases").setContentText("Your daily phrase is here!").setSmallIcon(0x7f020058).setContentIntent(((PendingIntent) (obj))).build();
+        obj = (new android.app.Notification.Builder(context)).setContentTitle("Motivate Me!").setContentText("Daily motivation.").setSmallIcon(0x7f020058).setContentIntent(((PendingIntent) (obj))).build();
         context = (NotificationManager)context.getSystemService("notification");
         obj.flags = ((Notification) (obj)).flags | 0x10;
         context.notify(0, ((Notification) (obj)));
@@ -34,7 +34,7 @@ public class AlarmReceiver extends BroadcastReceiver
 
     public void onReceive(Context context, Intent intent)
     {
-        Toast.makeText(context, "Daily Phrase", 0).show();
+        Toast.makeText(context, "Daily Motivation", 0).show();
         Log.d("AlarmReceiver", (new StringBuilder("Alarm fired at: ")).append(System.currentTimeMillis()).toString());
         createNotification(context);
     }

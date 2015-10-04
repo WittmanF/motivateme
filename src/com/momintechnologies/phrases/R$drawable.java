@@ -98,10 +98,11 @@ public static final class
     public static final int abc_textfield_searchview_holo_light = 0x7f020054;
     public static final int abc_textfield_searchview_right_holo_dark = 0x7f020055;
     public static final int abc_textfield_searchview_right_holo_light = 0x7f020056;
-    public static final int favicon = 0x7f020057;
-    public static final int ic_launcher = 0x7f020058;
-    public static final int taj1 = 0x7f020059;
-    public static final int taj2 = 0x7f02005a;
+    public static final int ic_launcher = 0x7f020057;
+    public static final int notification_icon = 0x7f020058;
+    public static final int pause_button = 0x7f020059;
+    public static final int pause_button_pressed = 0x7f02005a;
+    public static final int selector_pause_button = 0x7f02005b;
 
     public ()
     {

@@ -4,6 +4,7 @@
 
 package com.momintechnologies.phrases;
 
+import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.Dialog;
 import android.app.DialogFragment;
@@ -16,7 +17,6 @@ import android.text.format.DateFormat;
 import android.util.Log;
 import android.widget.TimePicker;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.TimeZone;
 
 // Referenced classes of package com.momintechnologies.phrases:
@@ -35,8 +35,7 @@ public class TimePickerFragment extends DialogFragment
         Object obj = new Intent(context, com/momintechnologies/phrases/AlarmReceiver);
         ((Intent) (obj)).addFlags(0x10000000);
         obj = PendingIntent.getBroadcast(context, 0, ((Intent) (obj)), 0x10000000);
-        ((AlarmManager)context.getSystemService("alarm")).setRepeating(0, calendar.getTimeInMillis(), 0xdbba0L, ((PendingIntent) (obj)));
-        Log.d("Phrases", (new StringBuilder("Set alarmManager.setRepeating to: ")).append(calendar.getTime().toLocaleString()).toString());
+        ((AlarmManager)context.getSystemService("alarm")).setRepeating(0, calendar.getTimeInMillis(), 0x5265c00L, ((PendingIntent) (obj)));
     }
 
     public Dialog onCreateDialog(Bundle bundle)
@@ -55,5 +54,6 @@ public class TimePickerFragment extends DialogFragment
         timepicker.set(11, i);
         timepicker.set(12, j);
         setRecurringAlarm(getActivity(), timepicker);
+        getActivity().finish();
     }
 }

@@ -72,16 +72,19 @@ public class DatabaseHelper extends SQLiteOpenHelper
 
     public Phrase getPhrase(int i)
     {
-        Cursor cursor = getReadableDatabase().query("phrases", new String[] {
+        Object obj = getReadableDatabase();
+        Phrase phrase = new Phrase();
+        obj = ((SQLiteDatabase) (obj)).query("phrases", new String[] {
             "phrase_id", "phrase_text"
         }, "phrase_id=?", new String[] {
             String.valueOf(i)
         }, null, null, null, null);
-        if (cursor != null)
+        if (obj != null)
         {
-            cursor.moveToFirst();
+            ((Cursor) (obj)).moveToFirst();
+            phrase = new Phrase(Integer.parseInt(((Cursor) (obj)).getString(0)), ((Cursor) (obj)).getString(1));
         }
-        return new Phrase(Integer.parseInt(cursor.getString(0)), cursor.getString(1));
+        return phrase;
     }
 
     public int getPhraseCount()

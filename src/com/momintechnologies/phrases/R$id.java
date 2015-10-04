@@ -47,7 +47,8 @@ public static final class
     public static final int none = 0x7f050010;
     public static final int normal = 0x7f050000;
     public static final int notify_button = 0x7f05003c;
-    public static final int phrase_text = 0x7f05003d;
+    public static final int pause_button = 0x7f05003f;
+    public static final int phrase_text = 0x7f05003e;
     public static final int progress_circular = 0x7f050018;
     public static final int progress_horizontal = 0x7f050019;
     public static final int radio = 0x7f05002f;
@@ -68,7 +69,7 @@ public static final class
     public static final int split_action_bar = 0x7f05001e;
     public static final int submit_area = 0x7f050039;
     public static final int tabMode = 0x7f050002;
-    public static final int timer_text = 0x7f05003e;
+    public static final int timer_text = 0x7f05003d;
     public static final int title = 0x7f05002b;
     public static final int top_action_bar = 0x7f050020;
     public static final int up = 0x7f050021;
